@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Portal</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; }
+        nav { background: #333; padding: 10px; margin-bottom: 20px; }
+        nav a { color: rgb(226, 226, 226); margin-right: 15px; text-decoration: none; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #000000; padding: 8px; text-align: left; }
+        .errorlist { color: red; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'student_list' %}">Students</a>
+        <a href="{% url 'student_add' %}">Add Student</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
